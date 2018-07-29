@@ -4,49 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Super Logo</title>
     <link rel="stylesheet" href="./css/Normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="content-wrapper">
-        <div class="container">
+       <div class="container">
+
+            <!-- Header -->
+
             <header>
                 <a href="#" class="logo"></a>
-                <a href="#" class="menu-btn"><img src="./img/menu-img.png" alt="menu"></a>
-            <!-- Not for mobile -->
-                <form action="#" method="get" class="search-form search-form_hidden">
+                <button class="menu-btn"><img src="./img/menu-img.png" alt="menu"></button>
+           <!-- Not for mobile  -->
+                <form action="#" method="get" class="search-form">
                     <input type="text" name="search" class="search-form__input">
                     <input type="submit" class="search-form__btn" value="GO">
                 </form>
-            <!-- ~~~~~~~~~~~~~~ -->
-                <div class="navigation-menu navigation-menu_hidden">
-                    <ul class="navigation">
-                        <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">home</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">service</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">partners</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">customers</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">project</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">careers</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
-                    </ul>
-                    <form action="#" method="get" class="menu-search-form search-form">
-                        <input type="text" name="search" class="search-form__input">
-                        <input type="submit" class="search-form__btn" value="GO">
-                    </form>
-                </div>
-            </header>
+           <!-- ~~~~~~~~~~~~~~~ -->
+            </header> 
+            <div class="navigation-menu navigation-menu_hidden">
+                <ul class="navigation">
+                    <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">service</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">partners</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">customers</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">project</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">careers</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+                </ul>
+                <form action="#" method="get" class="menu-search-form search-form">
+                    <input type="text" name="search" class="search-form__input">
+                    <input type="submit" class="search-form__btn" value="GO">
+                </form>
+            </div>
 
-            <div class="news">
-                <div class="news-item">
-                    <a href="#" class="news-item__header">about super logo</a>
-                    asd
+            <!-- Header news -->
+            <!-- Not for mobile -->
+
+            <div class="header-news">
+                <div class="header-news__info">
+                    <h1 class="header-news__header">Aliquam pharetra vulputate</h1>
+                    <p class="header-news__text">Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse sollicitudin quam eget condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst. </p>
+                    <input class="header-news__btn" type="button" value="READ MORE">
                 </div>
             </div>
+
+            <!-- News -->
+
+            <div class="news">
+                <div class="news-item-wrap">
+                    <div class="news-item">
+                        <a href="#" class="news-item__header">about super logo</a>
+                        <div class="news-item__img"><img src="img/news-img-1.jpg" alt="news-img-1.jpg"></div>
+                        <div class="news-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+                            <a href="#">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item-wrap">
+                    <div class="news-item news-item_border-decorate">
+                        <a href="#" class="news-item__header">SOME WORDS OUR CEO</a>
+                        <div class="news-item__img"><img src="img/news-img-2.jpg" alt="news-img-2.jpg"></div>
+                        <div class="news-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+                            <span>Steve Jobs, CEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item-wrap">
+                    <div class="news-item news-item_border-decorate">
+                        <a href="#" class="news-item__header">about super logo</a>
+                        <div class="news-item__img"><img src="img/news-img-3.jpg" alt="news-img-3.jpg"></div>
+                        <div class="news-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+                            <a href="#">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item-wrap">
+                    <div class="news-item">
+                        <a href="#" class="news-item__header">SOME WORDS OUR CEO</a>
+                        <div class="news-item__img"><img src="img/news-img-4.jpg" alt="news-img-4.jpg"></div>
+                        <div class="news-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+                            <span>Steve Jobs, CEO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+
+            <!-- Footer news -->
+            <!-- Not for mobile -->
+
+            <div class="footer-news">
+                <div class="footer-news__elem news-item">
+                    <a href="#" class="footer-news__header news-item__header">services</a>
+                    <p class="footer-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+                    <a class="footer-news__link" href="#">Read more...</a>
+                </div>
+
+                <div class="footer-news__elem news-item">
+                    <a href="#" class="footer-news__header news-item__header">recent posts</a>
+                    <div class="recent-post">
+                        <div class="recent-post__img">
+                            <img src="./img/recent-img-1.jpg" alt="recent-img-1.jpg">
+                        </div>
+                        <div class="recent-post__text">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="recent-post__img">
+                            <img src="./img/recent-img-2.jpg" alt="recent-img-2.jpg">
+                        </div>
+                        <div class="recent-post__text">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="recent-post__img">
+                            <img src="./img/recent-img-3.jpg" alt="recent-img-3.jpg">
+                        </div>
+                        <div class="recent-post__text">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="footer-news__elem news-item">
+                    <a href="#" class="footer-news__header news-item__header">services</a>
+                    <p class="footer-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+                    <a class="footer-news__link" href="#">Read more...</a>
+                </div>
+            </div>
+            
+            <!-- Clients -->
+            <!-- Not for mobile -->
+
+            <div class="clients news-item">
+                <a href="#" class="clients__header news-item__header">clients</a>
+                <img src='./img/clients-img-html5.png' alt="clients-img-html5.png">
+                <img src="./img/clients-img-css3.png" alt="clients-img-css3.png">
+                <img src="./img/clients-img-nodejs.png" alt="clients-img-nodejs.png">
+                <img src="./img/clients-img-php.png" alt="clients-img-php.png">
+                <img src="./img/clients-img-sql.png" alt="clients-img-sql.png">
+            </div>
+
         </div>
         <footer>
-
+            <span>Copyright © Lodoss Team  2018</span>
         </footer>
     </div>
     <script src="./js/script.js"></script>
