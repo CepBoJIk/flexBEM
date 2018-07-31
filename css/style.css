@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
-input {
+input, button {
     outline: none;
 }
 
@@ -80,6 +80,41 @@ header {
     font-size: 2rem;
     text-transform: uppercase;
 }
+
+.crash {
+    position: relative;
+    transform-origin: 13% 13%;
+    animation: crashLogo 0.8s cubic-bezier(.32,.71,.34,1);
+    animation-fill-mode: both;
+    z-index: 1;
+}
+
+.logo.crash::after {
+    background-color: transparent;
+}
+
+.drop {
+    animation: dropLogo 4s cubic-bezier(.54,.79,.46,.69);
+    animation-fill-mode: forwards; 
+}
+
+@keyframes crashLogo {
+    0% { transform: rotate(0deg);}
+    30% { transform: rotate(110deg); }
+    60% { transform: rotate(75deg); }
+    100% { transform: rotate(85deg); }
+ }
+
+ @keyframes dropLogo {
+     0% { transform: translateY(0);
+          transform: rotate(85deg)}
+     30% {transform: translateY(1000px);
+          opacity: 0;}
+     90% { transform: translateY(-100px);
+          opacity: 0;}
+     100% { transform: translateY(0);
+        opacity: 1; }
+ }
 
 .menu-btn {
     flex: 0 0 auto;
@@ -345,6 +380,10 @@ footer {
         cursor: pointer;
     }
 
+    .header-news-wrapper {
+        perspective: 1000px;
+    }
+
     .news {
         display: flex;
         flex-wrap: wrap;
@@ -509,5 +548,16 @@ footer {
     html {
         font-size: 16px;
     }
+}
+
+.emmersion {
+    animation: emmersion3d .7s linear both;
+}
+
+@keyframes emmersion3d {
+    0% {transform: rotateX(90deg);
+    margin-bottom: -100px;
+    margin-top: -100px;}
+    100% {transform: rotateX(0deg);}
 }
 
