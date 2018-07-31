@@ -27,7 +27,7 @@
     }
 })()
 
-class scrollMenu {
+class ScrollMenu {
     constructor() {
         this.menu = document.querySelector('.navigation-menu');
         this.scrollSize = 0;
@@ -61,4 +61,29 @@ class scrollMenu {
 
 }
 
-new scrollMenu();
+class LogoAnimation {
+    
+    constructor() {
+        this.logo = document.querySelector('.logo');
+
+        this.logo.addEventListener('click', this.addAnimation.bind(this));
+    }
+
+    addAnimation() {
+        let classList = this.logo.classList;
+
+        if(!classList.contains('crash')) {
+            this.logo.classList.add('crash');
+        } else if(classList.contains('crash') && classList.contains('drop')) {
+            classList.remove('crash');
+            classList.remove('drop');
+            classList.add('crash');
+        } else {
+            this.logo.classList.add('drop');
+        }
+        
+    }
+}
+
+new ScrollMenu();
+new LogoAnimation();
