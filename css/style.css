@@ -288,6 +288,25 @@ footer {
     text-align: center;
 }
 
+.media-block {
+    display: block;
+    margin: 0 1% 2.5rem;
+    text-align: center;
+}
+
+
+.media-block audio{
+    margin-top: 20px;
+}
+
+.media-block video {
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 768px) {
 
     .content-wrapper {
@@ -484,7 +503,7 @@ footer {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        margin: 0 1.26%;
+        margin: 0 1%;
         padding: 20px  0;
     }
 
