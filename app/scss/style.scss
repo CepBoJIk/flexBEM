@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import './Normalize.css';
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 $screen-small: 'min-width: 768px';
 $screen-large: 'min-width: 1027px';
 $screen-xlarge: 'min-width: 1400px';
+
 
 input {
   outline: none;
@@ -234,6 +236,8 @@ header {
   }
 }
 
+/*
+
 .header-news {
   display: none;
 
@@ -242,7 +246,7 @@ header {
 
     padding: 1.67rem 3.33rem 2.67rem;
 
-    background: #C4C4C4 url('../img/header-news-bg.jpg') center center;
+    background: #C4C4C4 url(../../img/header-news-bg.jpg) center center;
     -webkit-background-size: cover;
     background-size: cover;
 
@@ -281,7 +285,9 @@ header {
   }
 }
 
+*/
 
+@import 'slider.scss';
 
 .news {
     padding-top: 2.75rem;
