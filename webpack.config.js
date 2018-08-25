@@ -33,7 +33,7 @@ const common = {
         exclude: /node_modules/,
         loader: "eslint-loader",
         options: {
-          failOnError: true
+          failOnError: false
         }
       },
       {
