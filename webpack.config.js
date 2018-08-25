@@ -15,6 +15,9 @@ module.exports = function(env) {
   if(env === 'production') {
     return merge([common, babel, uglify]);
   }
+  if(env === 'production:github') {
+    return merge([common, babel, uglify, githubPagesPrefix]);
+  }
 }
 
 const common = {
@@ -23,7 +26,7 @@ const common = {
   output: {
     path: PATHS.build,
     filename: 'script.js',
-    publicPath: __dirname
+    publicPath: '/flexBEM/'
   },
   module: {
     rules: [
@@ -88,7 +91,9 @@ const uglify = {
 }
 
 const githubPagesPrefix = {
-
+  output: {
+    publicPath: '/flexBEM/'
+  }
 }
 
 
