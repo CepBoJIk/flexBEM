@@ -23,7 +23,7 @@ const common = {
   output: {
     path: PATHS.build,
     filename: 'script.js',
-    publicPath: '/'
+    publicPath: __dirname
   },
   module: {
     rules: [
@@ -33,7 +33,7 @@ const common = {
         exclude: /node_modules/,
         loader: "eslint-loader",
         options: {
-          failOnError: false
+          failOnError: true
         }
       },
       {
@@ -85,6 +85,10 @@ const uglify = {
   optimization: {
     minimize: true
   }
+}
+
+const githubPagesPrefix = {
+
 }
 
 
