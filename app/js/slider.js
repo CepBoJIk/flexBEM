@@ -23,18 +23,20 @@ export default class Slider {
 
   prevSlide() {
     if (this.activeSlide === 0) {
-      return;
+      this.activeSlide = this.itemsLength - 1;
+    } else {
+      this.activeSlide -= 1;
     }
-    this.activeSlide -= 1;
 
     this.slider.style.marginTop = `${-(this.activeSlide * this.sliderHeight)}px`;
   }
 
   nextSlide() {
     if (this.activeSlide === this.itemsLength - 1) {
-      return;
+      this.activeSlide = 0;
+    } else {
+      this.activeSlide += 1;
     }
-    this.activeSlide += 1;
 
     this.slider.style.marginTop = `${-(this.activeSlide * this.sliderHeight)}px`;
   }

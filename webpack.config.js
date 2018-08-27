@@ -9,13 +9,14 @@ const PATHS = {
 }
 
 module.exports = function(env) {
-  if(env === 'development') {
+  console.log(env)
+  if (env === 'development') {
     return common;
   }
-  if(env === 'production') {
+  if (env === 'production') {
     return merge([common, babel, uglify]);
   }
-  if(env === 'production:github') {
+  if (env === 'production:github') {
     return merge([common, babel, uglify, githubPagesPrefix]);
   }
 }
@@ -26,7 +27,7 @@ const common = {
   output: {
     path: PATHS.build,
     filename: 'script.js',
-    publicPath: '/flexBEM/'
+    publicPath: '/'
   },
   module: {
     rules: [
