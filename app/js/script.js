@@ -46,7 +46,7 @@ module.exports = function exportFuntion() {
           this.scrollSize = document.documentElement.clientHeight - this.menu.scrollHeight;
         }
 
-        this.menu.style.top = `${this.scrollSize} + px`;
+        this.menu.style.top = `${this.scrollSize}px`;
 
         event.preventDefault();
       }

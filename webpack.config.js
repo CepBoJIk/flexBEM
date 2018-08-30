@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 const merge = require('webpack-merge');
 
 const PATHS = {
@@ -26,7 +25,7 @@ const common = {
   output: {
     path: PATHS.build,
     filename: 'script.js',
-    publicPath: '/flexBEM/'
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -72,7 +71,7 @@ const babel = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
