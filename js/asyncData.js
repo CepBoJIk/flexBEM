@@ -28,14 +28,15 @@ class NewsContent {
     this.wrapper = wrapper;
   }
 
-  getData(textUrl) {
-    sendRequest('GET', textUrl).then(
-      (result) => {
-        this.textContentList = JSON.parse(result.responseText);
-        this.insertData(this.template, this.wrapper);
-      },
-      error => { throw error }
-    )
+  async getData(textUrl) {
+    try {
+      const resultXhr = await sendRequest('GET', textUrl)
+
+      this.textContentList = JSON.parse(resultXhr.responseText);
+      this.insertData(this.template, this.wrapper);
+    } catch(error) {
+      throw new Error(error);
+    }
   }
 
   insertData(template, wrapper) {
@@ -53,13 +54,15 @@ class NewsContent {
     })
   }
 
-  insertImage(elem) {
-    sendRequest('GET', 'https://picsum.photos/200/200/?random').then(
-      (result) => {
-        const url = result.responseURL;
-        elem.setAttribute('src', url);
-      }
-    )
+  async insertImage(elem) {
+    try {
+      const resultXhr = await sendRequest('GET', 'https://picsum.photos/200/200/?random')
+
+      const url = resultXhr.responseURL;
+      elem.setAttribute('src', url);
+    } catch(error) {
+      throw new Error(error);
+    }
   }
 
   insertHeader(elem, text) {
@@ -70,4 +73,4 @@ class NewsContent {
 
 const newsContent = new NewsContent(template, wrapper);
 
-newsContent.getData('https://baconipsum.com/api/?type=meat-and-filler&paras=5');
+newsContent.getData('https://baconipsum.com/api/?type=meat-and-filler&paras=6');
