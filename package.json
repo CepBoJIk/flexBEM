@@ -1,0 +1,36 @@
+{
+  "name": "flexbempractic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CepBoJIk/flexBEM.git",
+  "author": "Rogov Sergey <cepbojik3007@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --env production",
+    "buildGit": "webpack --env production:github",
+    "serv": "static dist",
+    "start": "webpack-dev-server --open --env development --hot"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.2",
+    "@babel/preset-env": "^7.0.0-rc.2",
+    "babel-loader": "^8.0.0-beta",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "node-static": "^0.7.10",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {}
+}
