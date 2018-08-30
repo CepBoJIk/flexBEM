@@ -1,0 +1,15 @@
+{
+  "name": "flexbempractic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CepBoJIk/flexBEM.git",
+  "author": "Rogov Sergey <cepbojik3007@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serv": "lite-server"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}

@@ -11,9 +11,7 @@
 <body>
     <div class="content-wrapper">
        <div class="container">
-
             <!-- Header -->
-
             <header>
                 <a href="#" class="logo"></a>
                 <button class="menu-btn"><img src="./img/menu-img.png" alt="menu"></button>
@@ -55,50 +53,18 @@
             <!-- News -->
 
             <div class="news">
+              <template class="news-item-template">
                 <div class="news-item-wrap">
                     <div class="news-item">
                         <a href="#" class="news-item__header">about super logo</a>
-                        <div class="news-item__img"><img src="img/news-img-1.jpg" alt="news-img-1.jpg"></div>
+                        <div class="news-item__img"><img src="" alt="news-img-1.jpg"></div>
                         <div class="news-item__text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
                             <a href="#">Read more...</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="news-item-wrap">
-                    <div class="news-item news-item_border-decorate">
-                        <a href="#" class="news-item__header">SOME WORDS OUR CEO</a>
-                        <div class="news-item__img"><img src="img/news-img-2.jpg" alt="news-img-2.jpg"></div>
-                        <div class="news-item__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-                            <span>Steve Jobs, CEO</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-item-wrap">
-                    <div class="news-item news-item_border-decorate">
-                        <a href="#" class="news-item__header">about super logo</a>
-                        <div class="news-item__img"><img src="img/news-img-3.jpg" alt="news-img-3.jpg"></div>
-                        <div class="news-item__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-                            <a href="#">Read more...</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-item-wrap">
-                    <div class="news-item">
-                        <a href="#" class="news-item__header">SOME WORDS OUR CEO</a>
-                        <div class="news-item__img"><img src="img/news-img-4.jpg" alt="news-img-4.jpg"></div>
-                        <div class="news-item__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-                            <span>Steve Jobs, CEO</span>
-                        </div>
-                    </div>
-                </div>
-
+              </template>
             </div> 
 
             <!-- Footer news -->
@@ -169,5 +135,6 @@
         </footer>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/asyncData.js"></script>
 </body>
 </html>
